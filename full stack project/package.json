@@ -1,0 +1,10 @@
+{
+  "name": "ppt-project",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix contact-manager-app",
+    "start": "npm run dev --prefix contact-manager-app",
+    "build": "npm run build --prefix contact-manager-app"
+  }
+}
+

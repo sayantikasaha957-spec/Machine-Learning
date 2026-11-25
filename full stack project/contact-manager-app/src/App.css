@@ -1,0 +1,363 @@
+/* ========================= GLOBAL STYLES ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: #17132c;
+}
+
+/* ========================= PAGE BACKGROUND ========================= */
+.page {
+  min-height: 100vh;
+  padding: 35px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #17132c, #29205b, #403c8b);
+}
+
+/* ========================= MAIN CONTAINER ========================= */
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #e9a8e8, #b9c9ff, #d6f0ff);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================= HEADER ========================= */
+.app-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.app-header h1 {
+  color: #251b81;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.app-header p {
+  color: #33266f;
+  font-size: 16px;
+}
+
+/* ========================= SEARCH BAR ========================= */
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-section input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background: #ffe4e9;
+  color: #30235e;
+  font-size: 15px;
+}
+
+.search-section input:focus {
+  border-color: #7544e9;
+}
+
+/* ========================= SECTION HEADINGS ========================= */
+.form-section h2,
+.list-section h2 {
+  color: #33266f;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ========================= CONTACT FORM ========================= */
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background: #ffe5e9;
+  color: #30235e;
+  font-size: 15px;
+}
+
+.form-section input:focus {
+  border-color: #7544e9;
+}
+
+.form-section input::placeholder {
+  color: #78627d;
+}
+
+/* ========================= PROFILE PHOTO UPLOAD ========================= */
+.photo-label {
+  color: #33266f;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form-section input[type="file"] {
+  padding: 10px;
+  background: #ffe4e9;
+  border: 1px dashed #7544e9;
+  cursor: pointer;
+}
+
+/* ========================= PHOTO PREVIEW ========================= */
+.photo-preview {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #ffe7eb;
+}
+
+.photo-preview img {
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #7544e9;
+  background: white;
+}
+
+.photo-preview button {
+  padding: 9px 13px;
+  border: none;
+  border-radius: 7px;
+  background: #7544e9;
+  color: white;
+  cursor: pointer;
+}
+
+.photo-preview button:hover {
+  background: #5033cf;
+}
+
+/* ========================= ADD BUTTON ========================= */
+.add-button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(100deg, #6415ed, #3028e8);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(65, 36, 220, 0.3);
+}
+
+/* ========================= CANCEL BUTTON ========================= */
+.cancel-button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #7544e9;
+  border-radius: 9px;
+  background: transparent;
+  color: #39228b;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background: rgba(117, 68, 233, 0.12);
+}
+
+/* ========================= CONTACT LIST ========================= */
+.list-section {
+  margin-top: 28px;
+}
+
+.list-section h2 {
+  margin-bottom: 15px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ========================= CONTACT CARD ========================= */
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 17px;
+  border-radius: 14px;
+  background: #ffe7eb;
+  border-left: 5px solid #7140df;
+  box-shadow: 0 4px 12px rgba(55, 34, 120, 0.08);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(55, 34, 120, 0.13);
+}
+
+/* ========================= CONTACT INFORMATION ========================= */
+.contact-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-info p {
+  color: #594a76;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.contact-info strong {
+  color: #40316e;
+}
+
+/* ========================= CONTACT PROFILE ========================= */
+.contact-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #7544e9;
+  background: white;
+  box-shadow: 0 3px 8px rgba(55, 34, 120, 0.15);
+}
+
+.contact-profile h3 {
+  color: #292080;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* ========================= DEFAULT PROFILE PICTURE ========================= */
+.profile-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(135deg, #7544e9, #3028e8);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ========================= EDIT AND DELETE BUTTONS ========================= */
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.contact-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact-actions button:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.edit-button {
+  background: #7544e9;
+}
+
+.delete-button {
+  background: #5033cf;
+}
+
+/* ========================= EMPTY MESSAGE ========================= */
+.empty-message {
+  padding: 22px 12px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 231, 235, 0.75);
+  color: #594a76;
+  font-size: 14px;
+}
+
+/* ========================= CONTACT COUNT ========================= */
+.contact-count {
+  margin-top: 16px;
+  text-align: right;
+  color: #33266f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ========================= RESPONSIVE DESIGN ========================= */
+@media (max-width: 480px) {
+  .page {
+    padding: 20px 10px;
+  }
+
+  .contact-container {
+    padding: 20px 14px;
+    border-radius: 16px;
+  }
+
+  .app-header h1 {
+    font-size: 28px;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-actions {
+    align-self: flex-end;
+  }
+
+  .profile-picture {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+
+  .photo-preview img {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+  }
+}

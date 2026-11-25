@@ -1,0 +1,627 @@
+{
+  "timestamp": "2026-11-23T18:28:48.952559",
+  "lookback_minutes": 60,
+  "horizon_steps": 12,
+  "cohort_summary": {
+    "total_patients": 217,
+    "train_patients": 151,
+    "val_patients": 32,
+    "test_patients": 34,
+    "train_windows": 32264,
+    "test_windows": 7049
+  },
+  "models": [
+    {
+      "model_name": "Last Value (Persistence)",
+      "overall_mae": 7.06,
+      "overall_rmse": 11.64,
+      "features": {
+        "heart_rate": {
+          "mae": 3.86,
+          "rmse": 7.0
+        },
+        "systolic_bp": {
+          "mae": 11.23,
+          "rmse": 16.58
+        },
+        "diastolic_bp": {
+          "mae": 6.1,
+          "rmse": 9.08
+        }
+      },
+      "steps": [
+        {
+          "step": 1,
+          "overall_mae": 3.33,
+          "overall_rmse": 6.22,
+          "heart_rate_mae": 2.34,
+          "heart_rate_rmse": 5.05,
+          "systolic_bp_mae": 4.78,
+          "systolic_bp_rmse": 8.02,
+          "diastolic_bp_mae": 2.87,
+          "diastolic_bp_rmse": 5.14
+        },
+        {
+          "step": 2,
+          "overall_mae": 4.65,
+          "overall_rmse": 8.1,
+          "heart_rate_mae": 2.87,
+          "heart_rate_rmse": 5.73,
+          "systolic_bp_mae": 7.07,
+          "systolic_bp_rmse": 11.08,
+          "diastolic_bp_mae": 4.01,
+          "diastolic_bp_rmse": 6.44
+        },
+        {
+          "step": 3,
+          "overall_mae": 5.63,
+          "overall_rmse": 9.5,
+          "heart_rate_mae": 3.21,
+          "heart_rate_rmse": 6.0,
+          "systolic_bp_mae": 8.83,
+          "systolic_bp_rmse": 13.39,
+          "diastolic_bp_mae": 4.86,
+          "diastolic_bp_rmse": 7.45
+        },
+        {
+          "step": 4,
+          "overall_mae": 6.39,
+          "overall_rmse": 10.59,
+          "heart_rate_mae": 3.5,
+          "heart_rate_rmse": 6.39,
+          "systolic_bp_mae": 10.16,
+          "systolic_bp_rmse": 15.09,
+          "diastolic_bp_mae": 5.52,
+          "diastolic_bp_rmse": 8.24
+        },
+        {
+          "step": 5,
+          "overall_mae": 6.98,
+          "overall_rmse": 11.39,
+          "heart_rate_mae": 3.71,
+          "heart_rate_rmse": 6.68,
+          "systolic_bp_mae": 11.18,
+          "systolic_bp_rmse": 16.31,
+          "diastolic_bp_mae": 6.05,
+          "diastolic_bp_rmse": 8.85
+        },
+        {
+          "step": 6,
+          "overall_mae": 7.42,
+          "overall_rmse": 11.96,
+          "heart_rate_mae": 3.9,
+          "heart_rate_rmse": 6.94,
+          "systolic_bp_mae": 11.95,
+          "systolic_bp_rmse": 17.17,
+          "diastolic_bp_mae": 6.42,
+          "diastolic_bp_rmse": 9.29
+        },
+        {
+          "step": 7,
+          "overall_mae": 7.77,
+          "overall_rmse": 12.41,
+          "heart_rate_mae": 4.06,
+          "heart_rate_rmse": 7.18,
+          "systolic_bp_mae": 12.5,
+          "systolic_bp_rmse": 17.83,
+          "diastolic_bp_mae": 6.73,
+          "diastolic_bp_rmse": 9.63
+        },
+        {
+          "step": 8,
+          "overall_mae": 8.05,
+          "overall_rmse": 12.75,
+          "heart_rate_mae": 4.23,
+          "heart_rate_rmse": 7.38,
+          "systolic_bp_mae": 12.96,
+          "systolic_bp_rmse": 18.31,
+          "diastolic_bp_mae": 6.97,
+          "diastolic_bp_rmse": 9.92
+        },
+        {
+          "step": 9,
+          "overall_mae": 8.29,
+          "overall_rmse": 13.07,
+          "heart_rate_mae": 4.37,
+          "heart_rate_rmse": 7.6,
+          "systolic_bp_mae": 13.33,
+          "systolic_bp_rmse": 18.74,
+          "diastolic_bp_mae": 7.17,
+          "diastolic_bp_rmse": 10.19
+        },
+        {
+          "step": 10,
+          "overall_mae": 8.53,
+          "overall_rmse": 13.39,
+          "heart_rate_mae": 4.55,
+          "heart_rate_rmse": 7.84,
+          "systolic_bp_mae": 13.67,
+          "systolic_bp_rmse": 19.18,
+          "diastolic_bp_mae": 7.37,
+          "diastolic_bp_rmse": 10.43
+        },
+        {
+          "step": 11,
+          "overall_mae": 8.76,
+          "overall_rmse": 13.66,
+          "heart_rate_mae": 4.72,
+          "heart_rate_rmse": 8.11,
+          "systolic_bp_mae": 13.99,
+          "systolic_bp_rmse": 19.49,
+          "diastolic_bp_mae": 7.57,
+          "diastolic_bp_rmse": 10.66
+        },
+        {
+          "step": 12,
+          "overall_mae": 8.96,
+          "overall_rmse": 13.89,
+          "heart_rate_mae": 4.87,
+          "heart_rate_rmse": 8.31,
+          "systolic_bp_mae": 14.3,
+          "systolic_bp_rmse": 19.82,
+          "diastolic_bp_mae": 7.71,
+          "diastolic_bp_rmse": 10.81
+        }
+      ]
+    },
+    {
+      "model_name": "Moving Average (15-min)",
+      "overall_mae": 7.4,
+      "overall_rmse": 11.38,
+      "features": {
+        "heart_rate": {
+          "mae": 3.97,
+          "rmse": 6.65
+        },
+        "systolic_bp": {
+          "mae": 11.85,
+          "rmse": 16.29
+        },
+        "diastolic_bp": {
+          "mae": 6.38,
+          "rmse": 8.88
+        }
+      },
+      "steps": [
+        {
+          "step": 1,
+          "overall_mae": 5.92,
+          "overall_rmse": 9.19,
+          "heart_rate_mae": 3.07,
+          "heart_rate_rmse": 5.12,
+          "systolic_bp_mae": 9.58,
+          "systolic_bp_rmse": 13.27,
+          "diastolic_bp_mae": 5.13,
+          "diastolic_bp_rmse": 7.15
+        },
+        {
+          "step": 2,
+          "overall_mae": 6.32,
+          "overall_rmse": 9.76,
+          "heart_rate_mae": 3.26,
+          "heart_rate_rmse": 5.39,
+          "systolic_bp_mae": 10.23,
+          "systolic_bp_rmse": 14.12,
+          "diastolic_bp_mae": 5.46,
+          "diastolic_bp_rmse": 7.57
+        },
+        {
+          "step": 3,
+          "overall_mae": 6.66,
+          "overall_rmse": 10.27,
+          "heart_rate_mae": 3.43,
+          "heart_rate_rmse": 5.66,
+          "systolic_bp_mae": 10.8,
+          "systolic_bp_rmse": 14.84,
+          "diastolic_bp_mae": 5.76,
+          "diastolic_bp_rmse": 7.99
+        },
+        {
+          "step": 4,
+          "overall_mae": 6.96,
+          "overall_rmse": 10.71,
+          "heart_rate_mae": 3.6,
+          "heart_rate_rmse": 5.96,
+          "systolic_bp_mae": 11.27,
+          "systolic_bp_rmse": 15.47,
+          "diastolic_bp_mae": 6.02,
+          "diastolic_bp_rmse": 8.34
+        },
+        {
+          "step": 5,
+          "overall_mae": 7.23,
+          "overall_rmse": 11.12,
+          "heart_rate_mae": 3.76,
+          "heart_rate_rmse": 6.26,
+          "systolic_bp_mae": 11.67,
+          "systolic_bp_rmse": 16.0,
+          "diastolic_bp_mae": 6.26,
+          "diastolic_bp_rmse": 8.7
+        },
+        {
+          "step": 6,
+          "overall_mae": 7.45,
+          "overall_rmse": 11.44,
+          "heart_rate_mae": 3.91,
+          "heart_rate_rmse": 6.48,
+          "systolic_bp_mae": 11.99,
+          "systolic_bp_rmse": 16.44,
+          "diastolic_bp_mae": 6.45,
+          "diastolic_bp_rmse": 8.98
+        },
+        {
+          "step": 7,
+          "overall_mae": 7.63,
+          "overall_rmse": 11.71,
+          "heart_rate_mae": 4.07,
+          "heart_rate_rmse": 6.76,
+          "systolic_bp_mae": 12.24,
+          "systolic_bp_rmse": 16.77,
+          "diastolic_bp_mae": 6.59,
+          "diastolic_bp_rmse": 9.17
+        },
+        {
+          "step": 8,
+          "overall_mae": 7.81,
+          "overall_rmse": 11.94,
+          "heart_rate_mae": 4.22,
+          "heart_rate_rmse": 7.03,
+          "systolic_bp_mae": 12.48,
+          "systolic_bp_rmse": 17.06,
+          "diastolic_bp_mae": 6.73,
+          "diastolic_bp_rmse": 9.35
+        },
+        {
+          "step": 9,
+          "overall_mae": 7.98,
+          "overall_rmse": 12.16,
+          "heart_rate_mae": 4.37,
+          "heart_rate_rmse": 7.29,
+          "systolic_bp_mae": 12.7,
+          "systolic_bp_rmse": 17.33,
+          "diastolic_bp_mae": 6.85,
+          "diastolic_bp_rmse": 9.5
+        },
+        {
+          "step": 10,
+          "overall_mae": 8.13,
+          "overall_rmse": 12.36,
+          "heart_rate_mae": 4.51,
+          "heart_rate_rmse": 7.51,
+          "systolic_bp_mae": 12.91,
+          "systolic_bp_rmse": 17.58,
+          "diastolic_bp_mae": 6.98,
+          "diastolic_bp_rmse": 9.64
+        },
+        {
+          "step": 11,
+          "overall_mae": 8.27,
+          "overall_rmse": 12.54,
+          "heart_rate_mae": 4.63,
+          "heart_rate_rmse": 7.72,
+          "systolic_bp_mae": 13.1,
+          "systolic_bp_rmse": 17.8,
+          "diastolic_bp_mae": 7.09,
+          "diastolic_bp_rmse": 9.77
+        },
+        {
+          "step": 12,
+          "overall_mae": 8.41,
+          "overall_rmse": 12.72,
+          "heart_rate_mae": 4.76,
+          "heart_rate_rmse": 7.93,
+          "systolic_bp_mae": 13.27,
+          "systolic_bp_rmse": 18.01,
+          "diastolic_bp_mae": 7.19,
+          "diastolic_bp_rmse": 9.88
+        }
+      ]
+    },
+    {
+      "model_name": "LSTM",
+      "overall_mae": 6.54,
+      "overall_rmse": 10.16,
+      "features": {
+        "heart_rate": {
+          "mae": 3.8,
+          "rmse": 6.31
+        },
+        "systolic_bp": {
+          "mae": 10.31,
+          "rmse": 14.38
+        },
+        "diastolic_bp": {
+          "mae": 5.52,
+          "rmse": 7.94
+        }
+      },
+      "steps": [
+        {
+          "step": 1,
+          "overall_mae": 3.68,
+          "overall_rmse": 5.95,
+          "heart_rate_mae": 2.66,
+          "heart_rate_rmse": 4.62,
+          "systolic_bp_mae": 5.38,
+          "systolic_bp_rmse": 7.92,
+          "diastolic_bp_mae": 2.99,
+          "diastolic_bp_rmse": 4.72
+        },
+        {
+          "step": 2,
+          "overall_mae": 4.68,
+          "overall_rmse": 7.43,
+          "heart_rate_mae": 2.98,
+          "heart_rate_rmse": 5.03,
+          "systolic_bp_mae": 7.14,
+          "systolic_bp_rmse": 10.3,
+          "diastolic_bp_mae": 3.92,
+          "diastolic_bp_rmse": 5.85
+        },
+        {
+          "step": 3,
+          "overall_mae": 5.49,
+          "overall_rmse": 8.61,
+          "heart_rate_mae": 3.22,
+          "heart_rate_rmse": 5.34,
+          "systolic_bp_mae": 8.66,
+          "systolic_bp_rmse": 12.23,
+          "diastolic_bp_mae": 4.58,
+          "diastolic_bp_rmse": 6.67
+        },
+        {
+          "step": 4,
+          "overall_mae": 6.09,
+          "overall_rmse": 9.45,
+          "heart_rate_mae": 3.4,
+          "heart_rate_rmse": 5.64,
+          "systolic_bp_mae": 9.73,
+          "systolic_bp_rmse": 13.51,
+          "diastolic_bp_mae": 5.14,
+          "diastolic_bp_rmse": 7.32
+        },
+        {
+          "step": 5,
+          "overall_mae": 6.54,
+          "overall_rmse": 10.07,
+          "heart_rate_mae": 3.58,
+          "heart_rate_rmse": 5.94,
+          "systolic_bp_mae": 10.48,
+          "systolic_bp_rmse": 14.41,
+          "diastolic_bp_mae": 5.57,
+          "diastolic_bp_rmse": 7.83
+        },
+        {
+          "step": 6,
+          "overall_mae": 6.85,
+          "overall_rmse": 10.48,
+          "heart_rate_mae": 3.73,
+          "heart_rate_rmse": 6.16,
+          "systolic_bp_mae": 10.95,
+          "systolic_bp_rmse": 14.99,
+          "diastolic_bp_mae": 5.85,
+          "diastolic_bp_rmse": 8.2
+        },
+        {
+          "step": 7,
+          "overall_mae": 7.08,
+          "overall_rmse": 10.79,
+          "heart_rate_mae": 3.94,
+          "heart_rate_rmse": 6.43,
+          "systolic_bp_mae": 11.29,
+          "systolic_bp_rmse": 15.38,
+          "diastolic_bp_mae": 6.02,
+          "diastolic_bp_rmse": 8.43
+        },
+        {
+          "step": 8,
+          "overall_mae": 7.3,
+          "overall_rmse": 11.07,
+          "heart_rate_mae": 4.11,
+          "heart_rate_rmse": 6.7,
+          "systolic_bp_mae": 11.61,
+          "systolic_bp_rmse": 15.74,
+          "diastolic_bp_mae": 6.18,
+          "diastolic_bp_rmse": 8.65
+        },
+        {
+          "step": 9,
+          "overall_mae": 7.46,
+          "overall_rmse": 11.28,
+          "heart_rate_mae": 4.24,
+          "heart_rate_rmse": 6.92,
+          "systolic_bp_mae": 11.82,
+          "systolic_bp_rmse": 15.99,
+          "diastolic_bp_mae": 6.32,
+          "diastolic_bp_rmse": 8.82
+        },
+        {
+          "step": 10,
+          "overall_mae": 7.62,
+          "overall_rmse": 11.47,
+          "heart_rate_mae": 4.39,
+          "heart_rate_rmse": 7.15,
+          "systolic_bp_mae": 12.04,
+          "systolic_bp_rmse": 16.22,
+          "diastolic_bp_mae": 6.44,
+          "diastolic_bp_rmse": 8.99
+        },
+        {
+          "step": 11,
+          "overall_mae": 7.78,
+          "overall_rmse": 11.66,
+          "heart_rate_mae": 4.58,
+          "heart_rate_rmse": 7.39,
+          "systolic_bp_mae": 12.19,
+          "systolic_bp_rmse": 16.43,
+          "diastolic_bp_mae": 6.58,
+          "diastolic_bp_rmse": 9.15
+        },
+        {
+          "step": 12,
+          "overall_mae": 7.92,
+          "overall_rmse": 11.84,
+          "heart_rate_mae": 4.72,
+          "heart_rate_rmse": 7.6,
+          "systolic_bp_mae": 12.38,
+          "systolic_bp_rmse": 16.64,
+          "diastolic_bp_mae": 6.65,
+          "diastolic_bp_rmse": 9.27
+        }
+      ]
+    },
+    {
+      "model_name": "GRU",
+      "overall_mae": 6.67,
+      "overall_rmse": 10.24,
+      "features": {
+        "heart_rate": {
+          "mae": 4.16,
+          "rmse": 6.5
+        },
+        "systolic_bp": {
+          "mae": 10.31,
+          "rmse": 14.47
+        },
+        "diastolic_bp": {
+          "mae": 5.53,
+          "rmse": 7.95
+        }
+      },
+      "steps": [
+        {
+          "step": 1,
+          "overall_mae": 3.57,
+          "overall_rmse": 5.79,
+          "heart_rate_mae": 2.78,
+          "heart_rate_rmse": 4.62,
+          "systolic_bp_mae": 5.0,
+          "systolic_bp_rmse": 7.58,
+          "diastolic_bp_mae": 2.92,
+          "diastolic_bp_rmse": 4.67
+        },
+        {
+          "step": 2,
+          "overall_mae": 4.65,
+          "overall_rmse": 7.36,
+          "heart_rate_mae": 3.14,
+          "heart_rate_rmse": 5.08,
+          "systolic_bp_mae": 6.96,
+          "systolic_bp_rmse": 10.16,
+          "diastolic_bp_mae": 3.85,
+          "diastolic_bp_rmse": 5.77
+        },
+        {
+          "step": 3,
+          "overall_mae": 5.47,
+          "overall_rmse": 8.54,
+          "heart_rate_mae": 3.39,
+          "heart_rate_rmse": 5.4,
+          "systolic_bp_mae": 8.46,
+          "systolic_bp_rmse": 12.06,
+          "diastolic_bp_mae": 4.55,
+          "diastolic_bp_rmse": 6.63
+        },
+        {
+          "step": 4,
+          "overall_mae": 6.13,
+          "overall_rmse": 9.42,
+          "heart_rate_mae": 3.74,
+          "heart_rate_rmse": 5.82,
+          "systolic_bp_mae": 9.58,
+          "systolic_bp_rmse": 13.4,
+          "diastolic_bp_mae": 5.08,
+          "diastolic_bp_rmse": 7.27
+        },
+        {
+          "step": 5,
+          "overall_mae": 6.62,
+          "overall_rmse": 10.09,
+          "heart_rate_mae": 3.9,
+          "heart_rate_rmse": 6.09,
+          "systolic_bp_mae": 10.42,
+          "systolic_bp_rmse": 14.39,
+          "diastolic_bp_mae": 5.53,
+          "diastolic_bp_rmse": 7.81
+        },
+        {
+          "step": 6,
+          "overall_mae": 6.96,
+          "overall_rmse": 10.55,
+          "heart_rate_mae": 4.12,
+          "heart_rate_rmse": 6.36,
+          "systolic_bp_mae": 10.95,
+          "systolic_bp_rmse": 15.05,
+          "diastolic_bp_mae": 5.82,
+          "diastolic_bp_rmse": 8.17
+        },
+        {
+          "step": 7,
+          "overall_mae": 7.25,
+          "overall_rmse": 10.92,
+          "heart_rate_mae": 4.36,
+          "heart_rate_rmse": 6.68,
+          "systolic_bp_mae": 11.35,
+          "systolic_bp_rmse": 15.54,
+          "diastolic_bp_mae": 6.05,
+          "diastolic_bp_rmse": 8.44
+        },
+        {
+          "step": 8,
+          "overall_mae": 7.49,
+          "overall_rmse": 11.2,
+          "heart_rate_mae": 4.54,
+          "heart_rate_rmse": 6.96,
+          "systolic_bp_mae": 11.7,
+          "systolic_bp_rmse": 15.9,
+          "diastolic_bp_mae": 6.23,
+          "diastolic_bp_rmse": 8.67
+        },
+        {
+          "step": 9,
+          "overall_mae": 7.68,
+          "overall_rmse": 11.43,
+          "heart_rate_mae": 4.67,
+          "heart_rate_rmse": 7.13,
+          "systolic_bp_mae": 11.99,
+          "systolic_bp_rmse": 16.19,
+          "diastolic_bp_mae": 6.39,
+          "diastolic_bp_rmse": 8.87
+        },
+        {
+          "step": 10,
+          "overall_mae": 7.88,
+          "overall_rmse": 11.68,
+          "heart_rate_mae": 4.86,
+          "heart_rate_rmse": 7.4,
+          "systolic_bp_mae": 12.23,
+          "systolic_bp_rmse": 16.51,
+          "diastolic_bp_mae": 6.54,
+          "diastolic_bp_rmse": 9.05
+        },
+        {
+          "step": 11,
+          "overall_mae": 8.09,
+          "overall_rmse": 11.87,
+          "heart_rate_mae": 5.14,
+          "heart_rate_rmse": 7.67,
+          "systolic_bp_mae": 12.46,
+          "systolic_bp_rmse": 16.72,
+          "diastolic_bp_mae": 6.67,
+          "diastolic_bp_rmse": 9.19
+        },
+        {
+          "step": 12,
+          "overall_mae": 8.2,
+          "overall_rmse": 12.02,
+          "heart_rate_mae": 5.22,
+          "heart_rate_rmse": 7.83,
+          "systolic_bp_mae": 12.62,
+          "systolic_bp_rmse": 16.89,
+          "diastolic_bp_mae": 6.77,
+          "diastolic_bp_rmse": 9.31
+        }
+      ]
+    }
+  ]
+}
